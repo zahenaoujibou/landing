@@ -1,0 +1,158 @@
+/* ===========================
+   IMPORT DES POLICES GOOGLE
+   =========================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* ===========================
+   IMPORT DES COMPOSANTS
+   =========================== */
+@import url("components/avatar.css");
+@import url("components/banner.css");
+@import url("components/button.css");
+@import url("components/card.css");
+
+/* ===========================
+   STYLES GÉNÉRAUX
+   =========================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff3e8;
+  color: #4a3b35;
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  color: #e86a1c;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+h2 {
+  color: #e86a1c;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+a {
+  color: #e86a1c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #b64a0b;
+}
+
+/* ===========================
+   CONTAINER (centré, responsive)
+   =========================== */
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* ===========================
+   SECTION PROFIL (sous la banner)
+   =========================== */
+
+.profile-section {
+  padding: 60px 0;
+}
+
+/* ===========================
+   SECTION CARDS "Passions"
+   =========================== */
+
+.section-title {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #888;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+/* ===========================
+   SOCIAL LINKS
+   =========================== */
+
+.list-inline {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.list-inline li {
+  display: inline;
+  padding: 10px;
+}
+
+.list-inline i {
+  font-size: 40px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.list-inline a:hover i {
+  transform: scale(1.2);
+  color: #b64a0b;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+
+footer {
+  background: #4a3b35;
+  color: rgba(255,255,255,0.7);
+  text-align: center;
+  padding: 24px;
+  font-size: 14px;
+}
+
+footer a {
+  color: #f28c28;
+}
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+
+@media (max-width: 720px) {
+  .banner h1 {
+    font-size: 36px;
+  }
+
+  .banner h2 {
+    font-size: 20px;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    padding: 100px 0;
+  }
+}
