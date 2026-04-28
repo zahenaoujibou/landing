@@ -1,0 +1,42 @@
+/* ===========================
+   BUTTON COMPONENT
+   =========================== */
+
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+/* Bouton principal orange */
+.btn-orange {
+  background-color: #e86a1c;
+  color: white;
+}
+
+.btn-orange:hover {
+  background-color: #b64a0b;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(232, 106, 28, 0.4);
+}
+
+/* Bouton outline blanc (pour la banner sur fond sombre) */
+.btn-white {
+  background-color: white;
+  color: #e86a1c;
+  border: 2px solid white;
+}
+
+.btn-white:hover {
+  background-color: transparent;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+}
